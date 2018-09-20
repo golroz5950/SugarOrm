@@ -15,7 +15,7 @@ public class SugarContext {
     private static int version;
     private static String domainPakageName;
     private static boolean queryLog;
-    private static String encryptKey;
+    
 
     public static String getDbName() {
         return dbName;
@@ -48,13 +48,6 @@ public class SugarContext {
         queryLog = queryLog_;
     }
 
-    public static String getEncryptKey() {
-        return encryptKey;
-    }
-
-    public static void setEncryptKey(String encryptKey_) {
-        encryptKey = encryptKey_;
-    }
 
     private SugarContext(Context context) {
         this.sugarDb = new SugarDb(context);
